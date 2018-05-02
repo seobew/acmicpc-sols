@@ -40,6 +40,7 @@ class Queue{
 			return -1;
 		}else{
 			long temp = this->head->value;
+			delete this->head;
 			this->head = this->head->next;
 			this->length--;
 			return temp;
